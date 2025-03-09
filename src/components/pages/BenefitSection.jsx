@@ -39,22 +39,22 @@ const BenefitsSection = () => {
                         <div>
                             <div className="text-4xl font-bold"></div>
                             <h5 className="text-4xl uppercase font-bold mb-3 counter display-4" id="count1">
-                            <AnimatedNumber endValue={570000} />
+                            {/* <AnimatedNumber endValue={570000} /> */}
                             </h5>
                             <p className='text-white text-capitalize'>Explore over 570,000 luxury hotel listings worldwide, with 50 new additions everyday</p>
                         </div>
                         <div>
                             <div className="flex items-center">
-                            <AnimatedNumber endValue={89} />
+                            {/* <AnimatedNumber endValue={89} /> */}
                             </div>
                             <p className='text-white'>Return on investment We’ve helped build over 400 projects and have worked with some amazing companies.</p>
                         </div>
                         <div>
-                        <AnimatedNumber endValue={13000000} />
+                        {/* <AnimatedNumber endValue={13000000} /> */}
                             <p className='text-white text-capitalize'>Return on investment We’ve helped build over 400 projects and have worked with some amazing companies.</p>
                         </div>
                         <div>
-                        <AnimatedNumber endValue={1000000} />
+                        {/* <AnimatedNumber endValue={1000000} /> */}
                             <p className='text-white text-capitalize'>We’ve helped build over 400 projects and have worked with some amazing companies.</p>
                         </div>
                     </div>
