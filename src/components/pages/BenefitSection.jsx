@@ -69,7 +69,7 @@ const BenefitsSection = () => {
     "Social Media Engagement"
 ].map((title, index) => (
                         <div key={index} className="text-center mx-auto p-3 collaborativeService-card">
-                            <img src="https://backend.luxuryhotelsplatform.com/undefined" className="mx-auto" alt="" />
+                            {/* <img src="https://backend.luxuryhotelsplatform.com/undefined" className="mx-auto" alt="" /> */}
                             <h1 className="text-xl uppercase my-4 text-golden">{title}</h1>
                             <p className='text-capitalize'>We’ve helped build over 400 projects and have worked with some amazing companies.</p>
                         </div>
