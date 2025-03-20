@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
       >
 
         <Myapp children={children} />
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -81,7 +81,7 @@ export default function RootLayout({ children }) {
         {/* <script src="/new/assets/js/theia-sticky-sidebar.js"></script> */}
         <script src="/new/assets/js/script.js"></script>
 
-        
+
       </body>
     </html>
   );

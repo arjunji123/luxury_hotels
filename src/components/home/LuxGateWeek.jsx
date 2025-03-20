@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import HearderNameIcon from "../hearderNameIcon";
 
@@ -42,66 +42,84 @@ function LuxGateWeek() {
 
   return (
     <>
-     <HearderNameIcon name={"NEW LUXE GETAWAYS EVERY WEEK"} />
-          <div style={{ backgroundImage: "url('/new/assets/img/splash.png')",backgroundSize: 'contain'}}>
-          
-    <div
-      className="flex justify-center items-center py-[30px]"
-    >
-      {/* Container */}
-      <div className="flex gap-8 p-4 rounded-lg">
-        {/* Sidebar Buttons */}
-        <div className="flex flex-col space-y-4">
-          {hotelData.map((hotel) => (
-           <button
-           key={hotel.country}
-           className={`px-4 py-2 
+      <HearderNameIcon name={"NEW LUXE GETAWAYS EVERY WEEK"} />
+      <div
+        style={{
+          backgroundImage: "url('/new/assets/img/splash.png')",
+        }}
+        className="bg-[auto_100%] bg-center bg-no-repeat "
+      >
+        <div className="flex justify-center items-center py-[30px]">
+          {/* Container */}
+          <div className="flex gap-8 p-4 rounded-lg">
+            {/* Sidebar Buttons */}
+            <div className="flex flex-col space-y-4">
+              {hotelData.map((hotel) => (
+                <button
+                  key={hotel.country}
+                  className={`px-4 py-2 
                bg-white border border-gray-300 text-[#9e7922] rounded-md hover:bg-gray-100`}
-           style={
-             hotel.country === selectedCountry
-               ? { background: "linear-gradient(to right, rgb(204, 164, 89), rgb(230, 205, 113), rgb(204, 163, 86))" ,color:"white",borderRadius:"10px" } :{}
-              
-           }
-           onClick={() => setSelectedCountry(hotel.country)}
-         >
-           {hotel.country}
-         </button>
-         
-          ))}
-        </div>
+                  style={
+                    hotel.country === selectedCountry
+                      ? {
+                          background:
+                            "linear-gradient(to right, rgb(204, 164, 89), rgb(230, 205, 113), rgb(204, 163, 86))",
+                          color: "white",
+                          borderRadius: "10px",
+                        }
+                      : {}
+                  }
+                  onClick={() => setSelectedCountry(hotel.country)}
+                >
+                  {hotel.country}
+                </button>
+              ))}
+            </div>
 
-        {/* Main Content */}
-        <div
-          className="flex flex-col pl-4 pt-0 pb-4 pr-4 rounded-md shadow-lg"
-          style={{ width: "820px",border:"2px solid #e2ac2e" }}
-        >
-         <div style={{display:"flex",gap:"15px",justifyContent:"space-between"}} className="mt-4">
-         
+            {/* Main Content */}
+            <div
+              className="flex flex-col pl-4 pt-0 pb-4 pr-4 rounded-md shadow-lg"
+              style={{ width: "820px", border: "2px solid #e2ac2e" }}
+            >
+              <div
+                style={{
+                  display: "flex",
+                  gap: "15px",
+                  justifyContent: "space-between",
+                }}
+                className="mt-4"
+              >
+                <h1 style={{ color: "#C1121F", fontSize: "1.25rem" }}>
+                  LUXURY HOTELS
+                </h1>
 
-          <h1 style={{color:"#C1121F",fontSize:"1.25rem"}}>LUXURY HOTELS</h1>
+                <span
+                  style={{
+                    color: "#a17800",
+                    fontSize: "1.25rem",
+                    marginLeft: "auto",
+                  }}
+                >
+                  {selectedHotel.name}
+                </span>
+              </div>
 
-          <span style={{color:"#a17800",fontSize:"1.25rem",marginLeft:"auto"}} >
-            {selectedHotel.name}
-          </span>
-         </div>
-
-          {/* YouTube Video */}
-          <div className="w-[790px] h-[400px] border-luxe mt-3">
-            <iframe
-              width="100%"
-              height="385"
-              src={selectedHotel?.youtubeLink}
-              title={selectedHotel?.name}
-              className="rounded-lg border"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              
-            ></iframe>
+              {/* YouTube Video */}
+              <div className="w-[790px] h-[400px] border-luxe mt-3">
+                <iframe
+                  width="100%"
+                  height="385"
+                  src={selectedHotel?.youtubeLink}
+                  title={selectedHotel?.name}
+                  className="rounded-lg border"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
     </>
   );
 }
