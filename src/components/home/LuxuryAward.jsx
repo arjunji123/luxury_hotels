@@ -40,15 +40,15 @@ const LuxuryAward = () => {
   return (
     <section
       className="newly-listed-award luxuryHotelSec"
-      style={{ paddingBottom: "50px" }}
+      style={{ paddingBottom: "40px" }}
     >
       {/* <HearderNameSection name={"Best luxury hotel of the year"} /> */}
       {/* <h2 className="text-center pt-3">Best luxury hotel of the year</h2> */}
-      <div className="container pt-4">
-        <div className="sectionInnerHead-new section-head-new">
+      <div className="container">
+        <div className="sectionInnerHead-new section-head-new !p-0">
           {/* <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 my-5 uppercase border-l-4 pl-3 border-[#846316] text-[#846316]">LATEST News</h1> */}
 
-          <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 my-5 uppercase border-l-4 pl-5 border-[#846316] text-[#846316]">
+          <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 uppercase border-l-4 pl-5 border-[#846316] text-[#846316]">
             BEST LUXURY HOTELS OF THE YEAR
           </h1>
           <div className="section-control">
@@ -58,15 +58,11 @@ const LuxuryAward = () => {
         </div>
       </div>
       <div className="container">
-        <div className="row whater-effect">
-          <div
-            className="col-md-9"
-            style={{ paddingTop: "42px", marginLeft: "14px" }}
-            data-aos="fade-left"
-          >
+        <div className="flex justify-center gap-[1rem] whater-effect">
+          <div className="w-[59rem] pt-[2.5rem]" data-aos="fade-left">
             <Swiper
               className="newly-listedSwiper"
-              spaceBetween={-10}
+              spaceBetween={16}
               autoplay={{
                 delay: 2000, // ✅ Auto-scroll every 2 seconds
                 disableOnInteraction: false, // ✅ Keeps autoplay running even after user interaction
@@ -185,15 +181,10 @@ const LuxuryAward = () => {
               )}
             </Swiper>
           </div>
-
-          <div
-            className="col-md-3"
-            data-aos="fade-right"
-            style={{ marginLeft: "-35px" }}
-          >
+          <div className="w-[19rem] shrink-0" data-aos="fade-right">
             <div className="same-cards-best-luxury">
               <div
-                className=""
+                className="h-[26rem]"
                 style={{
                   backgroundImage:
                     'url("/new/assets/img/nominate-hotel-bg.png")',
@@ -201,7 +192,6 @@ const LuxuryAward = () => {
                   backgroundPosition: "center center",
                   border: "2px solid #b79d13",
                   borderRadius: "12px",
-                  height: "88%",
                 }}
               >
                 <div className="section-comman-text">

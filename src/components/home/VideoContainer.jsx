@@ -4,7 +4,7 @@ const VideoContainer = () => {
   return (
     <>
       <section className="VideoContainer-sec">
-        <div className="container my-[2.362rem]">
+        <div className="container my-[2.5rem]">
           <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 bg-white uppercase border-l-4 pl-3 border-[#846316] text-[#846316]">
             Explore Luxury Destinations
           </h1>

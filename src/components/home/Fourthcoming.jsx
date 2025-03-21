@@ -27,7 +27,7 @@ const Fourthcoming = () => {
       <HeadingWithoutSwiper name={"FOURTHCOMING LUXURY HOTEL EDITIONS"} />
       {/* <h2 className="text-center pt-6 mt-0 text-white">FOURTHCOMING LUXURY HOTEL EDITIONS</h2> */}
       <div className="container relative">
-        <div className="grid mt-[2.362rem] grid-cols-12 gap-4">
+        <div className="grid mt-[2.5rem] grid-cols-12 gap-4">
           {/* Left Side - Magazine Covers */}
           <div className="col-span-full md:col-span-4">
             <div className="relativeBox">

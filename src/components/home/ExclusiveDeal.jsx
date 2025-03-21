@@ -25,16 +25,12 @@ const ExclusiveDeal = () => {
         }}
       >
         <HearderNameSection name={"Exclusive Deal"} />
-        <div className="container">
-          <div className="row">
-            <div
-              className="col-md-9"
-              style={{ paddingTop: "42px", paddingBottom: "42px" }}
-              data-aos="fade-left"
-            >
+        <div className="container mx-auto">
+          <div className="py-[2.5rem] flex gap-[1rem] flex-nowrap justify-center w-full">
+            <div className="!w-[59rem]" data-aos="fade-left">
               <Swiper
                 className="newly-listedSwiper"
-                spaceBetween={-2}
+                spaceBetween={16}
                 autoplay={{
                   delay: 2000, // ✅ Auto-scroll every 2 seconds
                   disableOnInteraction: false, // ✅ Keeps autoplay running even after user interaction
@@ -115,15 +111,8 @@ const ExclusiveDeal = () => {
               </Swiper>
             </div>
 
-            <div
-              className="col-md-3"
-              data-aos="fade-right"
-              style={{ marginLeft: "-29px" }}
-            >
-              <div
-                className="same-cards-best-luxury"
-                style={{ width: "19rem" }}
-              >
+            <div className="w-[19rem]" data-aos="fade-right">
+              <div className="" style={{ width: "19rem" }}>
                 <div
                   className=""
                   style={{

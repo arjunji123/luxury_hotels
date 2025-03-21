@@ -49,9 +49,9 @@ function LuxGateWeek() {
         }}
         className="bg-[auto_100%] bg-center bg-no-repeat "
       >
-        <div className="flex justify-center items-center py-[30px]">
+        <div className="flex justify-center items-center py-[2.5rem]">
           {/* Container */}
-          <div className="flex gap-8 p-4 rounded-lg">
+          <div className="flex gap-8 px-4 rounded-lg">
             {/* Sidebar Buttons */}
             <div className="flex flex-col space-y-4">
               {hotelData.map((hotel) => (

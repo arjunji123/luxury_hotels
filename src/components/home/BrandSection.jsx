@@ -41,7 +41,7 @@ const BrandSection = () => {
                 </div>
             </div> */}
 
-      <div data-aos="fade-left" className="container">
+      <div data-aos="fade-left" className="container pb-[2.5rem]">
         <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 my-5 uppercase border-l-4 pl-5 border-[#846316] text-[#846316]">
           WHO WE ARE WORKING WITH
         </h1>

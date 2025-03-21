@@ -43,7 +43,7 @@ const TravelNews = () => {
     <>
       {isTravelNewsSelect && (
         <section
-          className="fourthcoming-section travelmargin0 my-[2.362rem]"
+          className="fourthcoming-section travelmargin"
           style={{
             backgroundImage: 'url("/new/assets/img/newSparkle.jpg")',
             backgroundRepeat: "no-repeat",
@@ -55,7 +55,7 @@ const TravelNews = () => {
         >
           <div className="container">
             <div className="container">
-              <div className="sectionInnerHead section-head">
+              <div className="sectionInnerHead section-head pt-0">
                 {/* <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0 my-5 uppercase border-l-4 pl-3 border-[#846316] text-[#846316]">LATEST News</h1> */}
                 <h1 className="text-sm sm:text-xl md:text-sm lg:text-xl ml-2 md:ml-0  uppercase border-l-4 pl-3 border-[#846316] text-[#846316]">
                   Travel News
@@ -122,6 +122,7 @@ const TravelNews = () => {
                   autoplay={{
                     delay: 2000, // ✅ Auto-scroll every 2 seconds
                     disableOnInteraction: false, // ✅ Keeps autoplay running even after user interaction
+                    reverseDirection: true,
                   }}
                   slidesPerView={3}
                 >
