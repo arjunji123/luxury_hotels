@@ -18,12 +18,17 @@ const Fourthcoming = () => {
 
   return (
     <section
-      className="fourthcoming-section coming-sectionEdition"
+      className="fourthcoming-section coming-sectionEdition backdrop:brightness-50 relative"
       style={{
-        backgroundImage: 'url("/new/assets/img/1.png")',
-        backgroundSize: "cover",
+        backgroundImage: 'url("/new/assets/img/newSparkle.jpg")',
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "60% auto",
+        backgroundPositionY: "100%",
+        backgroundPositionX: "0",
       }}
     >
+      <div className="absolute w-full h-full bg-black/30"></div>
       <HeadingWithoutSwiper name={"FOURTHCOMING LUXURY HOTEL EDITIONS"} />
       {/* <h2 className="text-center pt-6 mt-0 text-white">FOURTHCOMING LUXURY HOTEL EDITIONS</h2> */}
       <div className="container relative">

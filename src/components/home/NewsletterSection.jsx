@@ -38,7 +38,7 @@ const NewsletterSection = () => {
     <>
       <HeadingWithoutSwiper name={"SUBSCRIBE NEWSLETTER"} />
       {/* <h3 className="text-center">SUBSCRIBE NEWSLETTER</h3>    */}
-      <div className="w-full relative h-[480px] bg-black">
+      <div className="w-full relative h-[480px] bg-black mb-[2.5rem]">
         <div
           style={{
             backgroundImage: 'url("/new/assets/img/transparent-bg.png")',

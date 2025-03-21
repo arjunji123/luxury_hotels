@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 import HearderNameSection from "./hearderNameSection";
 import HearderNameIcon from "./hearderNameIcon";
 import LuxGateWeek from "./home/LuxGateWeek";
+import HeadingWithoutSwiper from "./headingWithoutSwiper";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -36,10 +37,10 @@ const NewlyListedHotels = () => {
 
   return (
     <section className="newly-listed newly-listedSec mt-10">
-      <HearderNameSection name={" NEWLY LISTED HOTELS"} />
+      <HeadingWithoutSwiper name={" NEWLY LISTED HOTELS"} />
       <div>
         <div className="max-w-7xl mx-auto py-[2.5rem]">
-          <div className="flex items-start gap-[1rem]">
+          <div className="flex items-start gap-[1rem]" data-aos="fade-left">
             <div
               className="!w-[19rem] !h-[26rem] box-border shrink-0"
               style={{
@@ -165,7 +166,7 @@ const NewlyListedHotels = () => {
                         alt="hotel-image"
                       />
                     </div>
-                    <div className="-mt-16 mx-2 px-2 pt-4 relative z-10 blog-box">
+                    <div className="-mt-16 mx-2 px-2 pt-4 relative z-10 blog-box backdrop-blur-lg rounded-md">
                       <button
                         className="bg-white text-golden px-3 py-1 rounded-md uppercase w-full"
                         fdprocessedid="c9vgo"
