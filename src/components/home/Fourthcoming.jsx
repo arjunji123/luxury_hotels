@@ -34,14 +34,14 @@ const Fourthcoming = () => {
               {/* Navigation buttons must be inside the Swiper container */}
 
               <button
-                className="absolute transform -translate-y-[calc(50%-2.5rem)] -rotate-90 h-10 w-20 text-white bg-black top-1/2 -left-10"
+                className="absolute transform -translate-y-[calc(50%-4rem)] -rotate-90 h-10 w-32 text-white bg-red-600 top-1/2 -left-20"
                 id="custom-prev"
               >
                 Previous
               </button>
-              <hr className="absolute transform -translate-y-1/2 -rotate-90 text-white h-10 w-[2px] bg-white m-0 top-1/2" />
+              {/* <hr className="absolute transform -translate-y-1/2 -rotate-90 text-white h-10 w-[2px] bg-white m-0 top-1/2 border-none" /> */}
               <button
-                className="absolute transform -translate-y-[calc(50%+2.5rem)] -rotate-90 h-10 w-20 text-white bg-black top-1/2 -left-10"
+                className="absolute transform -translate-y-[calc(50%+4.1rem)] -rotate-90 h-10 w-32 text-white bg-black top-1/2 -left-20"
                 id="custom-next"
               >
                 Next
