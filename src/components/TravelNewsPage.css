@@ -1,0 +1,210 @@
+.travel-container {
+  padding: 1rem;
+  padding-right: 25px;
+  margin: auto !important;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns by default */
+  gap: 0px; /* Add gap between grid items */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+  .travel-hotel-cards {
+    width: 100%; /* Full width for tablet screens */
+  }
+  .parent-image {
+  height: 20rem;
+  }
+  .hotel-img .hotel-inner-img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr; /* 1 column for mobile */
+  }
+  .travel-hotel-cards {
+    width: 100%; /* Full width for mobile screens */
+  }
+}
+
+.hotel-img {
+  inset: 0px 5px 5px 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.hotel-img .hotel-inner-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parent-image {
+  background-color: white;
+  border-radius: 0px;
+  padding: 9px;
+  padding-top: 0px !important;
+  top: 0 !important;
+  position: relative;
+}
+
+.travel-hotel-cards {
+  width: 100%; /* Default width */
+  max-width: 306px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center align cards */
+}
+
+.hotel-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .hotel-inner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Match the card's border radius */
+  }
+  
+  .hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .teams-name {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .teams-name:hover {
+    color: #846316;
+  }
+  
+  .teams-role {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+.hotel-name,
+.teams-name,
+.teams-role,
+button {
+  width: 90%; /* Ensure all elements take full width */
+  color: #846316;
+}
+
+button {
+    max-width: 150px; /* Limit button width */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  .teams-name {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .teams-name:hover {
+    color: #846316;
+  }
+  
+.teams-role {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .hotel-cards {
+    position: relative; /* Make this the reference for absolute positioning */
+    overflow: hidden; /* Ensure content doesn't overflow */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    z-index: 1; /* Ensure it stays below the content */
+  }
+  .hotel-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+  }
+  .hotel-inner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Match the card's border radius */
+  }
+  .hotel-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .teams-name {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .teams-name:hover {
+    color: #846316;
+  }
+  
+  .teams-role {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .col-lg-3 {
+    position: relative; /* Make this the reference for z-index stacking */
+  }
