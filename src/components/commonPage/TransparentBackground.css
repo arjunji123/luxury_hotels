@@ -1,0 +1,21 @@
+.transparent-bg-height {
+  background-image: url("/new/assets/img/transparent-bg.png");
+  background-size: cover; /* Change from contain to cover for full background */
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 10px 0; /* Increase padding to make height bigger */
+  position: absolute;
+  bottom: -500px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%; /* Increase width */
+  max-width: 1400px; /* Optional: Control max width for responsiveness */
+}
+
+@media (max-width: 768px) {
+  .tranparent-content {
+    width: 87%;
+ 
+  
+}
+}
